@@ -1,18 +1,25 @@
-body {
-  background: image-url("/background-img.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
- 
 .main{
-  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.bg_video{
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1000;
+background: url(/background-img.jpg) no-repeat;
+background-size: cover;
 }
  
  
 .title-box{
-  margin-top: 20%;
+  
  
   .title{
     color: white;
@@ -23,8 +30,7 @@ body {
     color: white;
     text-shadow: 3px 0px 3px #000000;
     font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+  
   }
 }
  
