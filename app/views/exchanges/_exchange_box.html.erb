@@ -17,10 +17,10 @@
             <input type='number' name='amount' id='amount' class='form-control' placeholder='Quantidade ($10)' step='any' required>
           </div>
         </div>
-                    
+               
         <div class='destination_currency'>
           <div class='form-group'>
-            <p class='title'>Moeda Pretendida</p>
+              <p class='title'>Moeda Pretendida</p>               
             <%= select_tag 'target_currency', options_for_select(currency_list, 'EUR'), class: 'form-control', id: 'target_currency'%>
           </div>
           <div class='form-group'>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div>
-          <button type='submit' class='btn btn-primary btn-exchange col-md-12'>CONVERTER</button>
+           <div class='btn btn-primary btn-exchange col-md-12' id='invert-currency'>Inverter Conversão &#8645</div>
         </div>
       <% end %>
     </div>
